@@ -36,7 +36,14 @@
         </provider>
     </application>
 
-    <!-- Permissions -->
-
-    <uses-permission android:name="android.permission.INTERNET" />
+  <!-- Navigator.getUserMedia -->
+  <!-- Video -->
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <uses-feature android:name="android.hardware.camera" android:required="false" />
+  <!-- Audio -->
+  <uses-feature android:name="android.hardware.microphone" android:required="false" />
+  <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+  <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
