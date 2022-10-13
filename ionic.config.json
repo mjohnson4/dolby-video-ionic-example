@@ -1,0 +1,8 @@
+{
+  "name": "dolby-video-ionic-example",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

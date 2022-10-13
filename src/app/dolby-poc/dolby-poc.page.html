@@ -1,0 +1,63 @@
+<ion-content>
+  <div class="container bg-dark text-white gx-4 px-4 py-4 mt-3 rounded">
+    <img src="https://go.dolby.io/hubfs/raw_assets/public/Dolby_April2021/images/dolby-io-logo.svg" />
+    <h1>Getting Started with Video Calls</h1>
+  </div>
+
+  <div class="container px-4 mt-4" *ngIf="token">
+    <div class="row justify-content-around mt-3">
+      <div class="col-4 shadow p-3 mb-5 bg-body rounded">
+        <h2>Self-View</h2>
+        <style>
+          #self-view video {
+            /* Flip the display of the local user in self view */
+            -webkit-transform: rotateY(180deg);
+            /* Safari, Chrome */
+            -moz-transform: rotateY(180deg);
+            /* Firefox */
+            transform: rotateY(180deg);
+            /* Microsoft, etc. */
+          }
+        </style>
+        <div id="self-view">
+          <!-- Container for the local participant media stream -->
+          <p id="self-view-username"></p>
+          <i class="display-1 bi bi-person-video position-relative"></i>
+        </div>
+
+        <button type="button" class="btn btn-dark" id="btn-join">Join</button>
+        <button type="button" class="btn btn-dark" id="btn-leave">Leave</button>
+      </div>
+
+      <div class="col-4 shadow p-3 mb-5 bg-body rounded">
+        <h2>Remote-View</h2>
+        <div id="remote-view">
+          <!-- Container for the remote participant media stream -->
+          <p id="remote-view-username"></p>
+          <i class="display-1 bi bi-person-video position-relative"></i>
+        </div>
+
+        <button type="button" class="btn btn-dark" id="btn-invite"><i class="bi bi-clipboard2-plus-fill"></i>
+          Invite</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container px-4 py-4 mt-3">
+    <p id="message"></p>
+  </div>
+
+  <div class="modal fade" id="token-prompt" tabindex="-1" aria-labelledby="token-prompt-label" aria-hidden="true"
+    *ngIf="!token">
+    <div class="modal-body">
+      <label for="input-token" class="form-label">Demo Client Access Token:</label>
+      <input id="input-token" type="text" class="form-control" value="{{sampleToken}}">
+    </div>
+    <div class="modal-footer">
+      <button type="button" id="btn-token" class="btn btn-primary" (click)="authenticate()">Authenticate</button>
+    </div>
+  </div>
+
+
+
+</ion-content>
