@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'dolby.io.ionic.starter',
   appName: 'dolby-video-ionic-example',
   webDir: 'www',
   bundledWebRuntime: false,
