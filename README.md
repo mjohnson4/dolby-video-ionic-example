@@ -6,5 +6,5 @@
 To build ios and android app run - 
 ionic capacitor sync
 
-iOS - Open ios/ folder in Xcode
+iOS - Open ios/ folder in Xcode, 
 Android - Open android/ folder in Android studio
