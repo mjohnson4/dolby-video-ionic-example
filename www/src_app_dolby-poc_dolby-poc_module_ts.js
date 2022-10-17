@@ -107,7 +107,7 @@ let DolbyPocPage = class DolbyPocPage {
     // --- end
     constructor() {
         // eslint-disable-next-line max-len
-        this.sampleToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkb2xieS5pbyIsImlhdCI6MTY2NTEyNjYzNSwic3ViIjoibHFiMGJoN2FuNzc5bmhpUklzZVVEQT09Iiwic2NvcGUiOiJzZXNzaW9uIiwib2lkIjoiY2MzNTNkYzYtMmM5ZC00Y2RjLTk0NDMtNzU4ODIwMWUzNzY4IiwiYmlkIjoiOGEzNjhmNWE4MzVhMjY5ODAxODM1ZTZjMTI0MjdiN2IiLCJhaWQiOiI5MDA3ZGM5ZS05YjU5LTRiYTAtYjdjNy01OGMwNWM2ZWQ2OWIiLCJhdXRob3JpdGllcyI6WyJST0xFX0NVU1RPTUVSIl0sImV4cCI6MTY2NTE2OTgzNX0.Gw75o5qfYqyO9Mmz2sH3jCkPYA6mwXhVVUcoy_kA-n7bougIDIcm3lcJsjOUD5txwCF75PR7Z8Va_wraGCzL1Q';
+        this.sampleToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkb2xieS5pbyIsImlhdCI6MTY2NTk4MTM5Mywic3ViIjoibHFiMGJoN2FuNzc5bmhpUklzZVVEQT09Iiwic2NvcGUiOiJzZXNzaW9uIiwib2lkIjoiY2MzNTNkYzYtMmM5ZC00Y2RjLTk0NDMtNzU4ODIwMWUzNzY4IiwiYmlkIjoiOGEzNjhmNWE4MzVhMjY5ODAxODM1ZTZjMTI0MjdiN2IiLCJhaWQiOiI5MDA3ZGM5ZS05YjU5LTRiYTAtYjdjNy01OGMwNWM2ZWQ2OWIiLCJhdXRob3JpdGllcyI6WyJST0xFX0NVU1RPTUVSIl0sImV4cCI6MTY2NjAyNDU5M30.jZ1Ro1PVA0NKrOiuqKdgcnHRyaW5G6F3MPU67ggnpODHU1BBsWtvfWjrYazmxQdURwJ8FgW26fyJC2-IDhF6-w';
         this.shareMessage = (message) => {
             document.getElementById('message').innerText = message;
         };
